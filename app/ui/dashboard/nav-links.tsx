@@ -23,7 +23,8 @@ const links = [
 
 export default function NavLinks() {
   const pathname = usePathname();
-   return (
+  console.log('Current page url : ' + pathname);
+  return (
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
